@@ -1,0 +1,21 @@
+{
+  "name": "dayjswrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Juan Yepes",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "typescript": "^5.2.2",
+    "dayjs": "^1.11.9"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.9"
+  }
+}
