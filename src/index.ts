@@ -323,13 +323,11 @@ class DayjsDateTime implements DateTime {
     let dateValue;
     const { inputFormat, timezone, strict } = options || {};
 
-    const tz = dayjs.tz.guess();
-
     try {
       if (timezone) {
         dateValue = inputFormat
-          ? dayjs.tz(inputDate, inputFormat, tz)
-          : dayjs.tz(inputDate, tz);
+          ? dayjs.tz(inputDate, inputFormat, timezone)
+          : dayjs.tz(inputDate, timezone);
       } else {
         dateValue = inputFormat
           ? dayjs(inputDate, inputFormat, strict)
